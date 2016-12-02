@@ -1,5 +1,5 @@
 #FROM resin/raspberrypi2-python:2.7
-FROM tobi312/rpi-raspberrypi2-python:2.7
+FROM tobi312/rpi-raspberrypi2-python-qemu:2.7
 
 RUN [ "cross-build-start" ]
 
