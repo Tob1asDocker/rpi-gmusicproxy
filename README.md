@@ -14,7 +14,7 @@ GMusicProxy is a proxy for [*Google Music*](https://play.google.com/music/listen
 or build it yourself
 * use the official repository and do the following before you build the image: ``` $ sed -i -e 's/FROM python:2.7/FROM resin\/raspberrypi2-python:2.7/g' Dockerfile ```
 
-* http://localhost:9999 
+* e.g. http://localhost:9999/get_all_playlists 
 
 ### This Image on
 * [DockerHub](https://hub.docker.com/r/tobi312/rpi-gmusicproxy/)
