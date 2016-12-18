@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 	--no-install-recommends && \
 	rm -rf /var/lib/apt/lists/* 
 
-ENV GMUSICPROXY_VERSION 1.0.5
+ENV GMUSICPROXY_VERSION 1.0.4
 
 RUN wget https://github.com/diraimondo/gmusicproxy/archive/v${GMUSICPROXY_VERSION}.tar.gz && \
 	tar -xzf v${GMUSICPROXY_VERSION}.tar.gz -C / && \
