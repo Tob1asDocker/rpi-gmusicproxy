@@ -9,7 +9,7 @@ GMusicProxy is a proxy for [*Google Music*](https://play.google.com/music/listen
 ### How to use this image
 * ``` $ docker pull tobi312/rpi-gmusicproxy ```
 * Optional: ``` $ mkdir /home/pi/.config/gmusicproxy && touch /home/pi/.config/gmusicproxy/gmusicproxy.cfg ``` and edit [gmusicproxy.cfg](https://github.com/TobiasH87Docker/rpi-gmusicproxy/blob/master/gmusicproxy.cfg)
-* ``` $ docker run --name gmusicproxy -v /home/pi/.config/gmusicproxy:/root/.config -p 9999:9999 tobi312/rpi-gmusicproxy ``` 
+* ``` $ docker run --name gmusicproxy -v /home/pi/.config/gmusicproxy:/root/.config -p 9999:9999 -d tobi312/rpi-gmusicproxy ``` 
 
 or build it yourself
 * use the official repository and do the following before you build the image: ``` $ sed -i -e 's/FROM python:2.7/FROM resin\/raspberrypi2-python:2.7/g' Dockerfile ```
