@@ -1,14 +1,21 @@
-#FROM resin/raspberrypi2-python:2.7
-FROM tobi312/rpi-raspberrypi2-python-qemu:2.7
+FROM resin/rpi-raspbian:stretch
 
 RUN [ "cross-build-start" ]
 
 RUN apt-get update && apt-get install -y \
 	git \
+	build-essential \
+	python2.7-dev \
+	python-pip \
+	python-setuptools \
+	libffi-dev libssl-dev \
+	libmagic-dev \
 	--no-install-recommends && \
 	rm -rf /var/lib/apt/lists/* && \
+	pip --version && \
+	python --version && \
 	git clone https://github.com/diraimondo/gmusicproxy.git app/ && \
-	apt-get remove --purge git && apt-get clean && \
+	apt-get remove --purge git git-man libcurl3-gnutls liberror-perl && apt-get clean && \
 	cd /app && pip install --no-cache-dir -r requirements.txt
 
 #COPY gmusicproxy.cfg /root/.config/gmusicproxy.cfg

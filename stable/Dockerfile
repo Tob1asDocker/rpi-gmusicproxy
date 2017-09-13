@@ -1,16 +1,22 @@
-#FROM resin/raspberrypi2-python:2.7
-FROM tobi312/rpi-raspberrypi2-python-qemu:2.7
+FROM resin/rpi-raspbian:stretch
+
+ENV GMUSICPROXY_VERSION 1.0.8
 
 RUN [ "cross-build-start" ]
 
 RUN apt-get update && apt-get install -y \
 	wget \
+	build-essential \
+	python2.7-dev \
+	python-pip \
+	python-setuptools \
+	libffi-dev libssl-dev \
+	libmagic-dev \
 	--no-install-recommends && \
-	rm -rf /var/lib/apt/lists/* 
-
-ENV GMUSICPROXY_VERSION 1.0.6
-
-RUN wget https://github.com/diraimondo/gmusicproxy/archive/v${GMUSICPROXY_VERSION}.tar.gz && \
+	rm -rf /var/lib/apt/lists/* && \
+	pip --version && \
+	python --version && \
+	wget https://github.com/diraimondo/gmusicproxy/archive/v${GMUSICPROXY_VERSION}.tar.gz && \
 	tar -xzf v${GMUSICPROXY_VERSION}.tar.gz -C / && \
 	mv /gmusicproxy-${GMUSICPROXY_VERSION} /app  && \
 	cd /app && pip install --no-cache-dir -r requirements.txt
