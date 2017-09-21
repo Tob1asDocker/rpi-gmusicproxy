@@ -3,6 +3,7 @@
 ### Supported tags
 -	[`latest` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-gmusicproxy/blob/master/latest/Dockerfile)
 -	[`alpine` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-gmusicproxy/blob/master/alpine/Dockerfile)
+
 (*It always uses the latest GMusicProxy version from [github.com/diraimondo/gmusicproxy](https://github.com/diraimondo/gmusicproxy).*)
 
 ### What is GMusicProxy?
