@@ -10,6 +10,7 @@ RUN set -x && apk --no-cache add \
 	py2-pip \
 	py-setuptools \
 	py2-lxml \
+	libxslt-dev \
 	libffi-dev openssl-dev \
 	libmagic \
 	&& pip --version \
