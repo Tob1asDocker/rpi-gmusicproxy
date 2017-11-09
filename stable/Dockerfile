@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 	python-setuptools \
 	libffi-dev libssl-dev \
 	libmagic-dev \
+	libxml2-dev libxslt1-dev \
 	--no-install-recommends && \
 	rm -rf /var/lib/apt/lists/* && \
 	pip --version && \
