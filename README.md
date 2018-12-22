@@ -1,13 +1,13 @@
 # GMusicProxy on Raspberry Pi / armhf
 
 ### Supported tags
--	[`latest` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-gmusicproxy/blob/master/latest/Dockerfile)
--	[`alpine` (*Dockerfile*)](https://github.com/TobiasH87Docker/rpi-gmusicproxy/blob/master/alpine/Dockerfile)
+-	[`latest` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-gmusicproxy/blob/master/latest/Dockerfile)
+-	[`alpine` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-gmusicproxy/blob/master/alpine/Dockerfile)
 
 (*It always uses the latest GMusicProxy version from [github.com/gmusicproxy/gmusicproxy](https://github.com/gmusicproxy/gmusicproxy).*)
 
 ### What is GMusicProxy?
-GMusicProxy is a proxy for [*Google Music*](https://play.google.com/music/listen) written in python to stream music to any media-player (e.g. [*MPD*](https://www.musicpd.org/), [*VLC*](http://www.videolan.org/vlc/)). For more information visit [gmusicproxy.net](http://gmusicproxy.net/) or [github.com/diraimondo/gmusicproxy](https://github.com/diraimondo/gmusicproxy).
+GMusicProxy is a proxy for [*Google Music*](https://play.google.com/music/listen) written in python to stream music to any media-player (e.g. [*MPD*](https://www.musicpd.org/), [*VLC*](http://www.videolan.org/vlc/)). For more information visit [gmusicproxy.net](http://gmusicproxy.net/) or [github.com/gmusicproxy/gmusicproxy](https://github.com/gmusicproxy/gmusicproxy).
 
 ### How to use this image
 * ``` $ docker pull tobi312/rpi-gmusicproxy ```
@@ -21,4 +21,4 @@ or build it yourself
 
 ### This Image on
 * [DockerHub](https://hub.docker.com/r/tobi312/rpi-gmusicproxy/)
-* [GitHub](https://github.com/TobiasH87Docker/rpi-gmusicproxy)
+* [GitHub](https://github.com/Tob1asDocker/rpi-gmusicproxy)
