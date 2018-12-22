@@ -7,7 +7,7 @@
 (*It always uses the latest GMusicProxy version from [github.com/gmusicproxy/gmusicproxy](https://github.com/gmusicproxy/gmusicproxy).*)
 
 ### What is GMusicProxy?
-GMusicProxy is a proxy for [*Google Music*](https://play.google.com/music/listen) written in python to stream music to any media-player (e.g. [*MPD*](https://www.musicpd.org/), [*VLC*](http://www.videolan.org/vlc/)). For more information visit [gmusicproxy.net](http://gmusicproxy.net/) or [github.com/gmusicproxy/gmusicproxy](https://github.com/gmusicproxy/gmusicproxy).
+GMusicProxy is a proxy for [*Google Music*](https://play.google.com/music/listen) written in python to stream music to any media-player (e.g. [*MPD*](https://www.musicpd.org/), [*VLC*](http://www.videolan.org/vlc/)). For more information visit  [github.com/gmusicproxy/gmusicproxy](https://github.com/gmusicproxy/gmusicproxy).
 
 ### How to use this image
 * ``` $ docker pull tobi312/rpi-gmusicproxy ```
