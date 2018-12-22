@@ -1,4 +1,4 @@
-FROM resin/raspberry-pi-alpine:3.6
+FROM resin/raspberry-pi-alpine:3.8
 
 MAINTAINER Tobias Hargesheimer <docker@ison.ws>
 
@@ -15,7 +15,7 @@ RUN set -x && apk --no-cache add \
 	libmagic \
 	&& pip --version \
 	&& python --version \
-	&& pip install --upgrade pip \
+	#&& pip install --upgrade pip \
 	&& git clone https://github.com/gmusicproxy/gmusicproxy.git app/ \
 	&& cd /app && pip install --no-cache-dir -r requirements.txt
 	

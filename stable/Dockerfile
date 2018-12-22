@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 	rm -rf /var/lib/apt/lists/* && \
 	pip --version && \
 	python --version && \
-	pip install --upgrade pip && \
+	#pip install --upgrade pip && \
 	wget https://github.com/gmusicproxy/gmusicproxy/archive/v${GMUSICPROXY_VERSION}.tar.gz && \
 	tar -xzf v${GMUSICPROXY_VERSION}.tar.gz -C / && \
 	mv /gmusicproxy-${GMUSICPROXY_VERSION} /app  && \
