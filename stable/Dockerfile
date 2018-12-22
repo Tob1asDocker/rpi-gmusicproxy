@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
 	libffi-dev libssl-dev \
 	libmagic-dev \
 	libxml2-dev libxslt1-dev \
+	python-lxml \
+	python-docutils \
 	--no-install-recommends && \
 	rm -rf /var/lib/apt/lists/* && \
 	pip --version && \
