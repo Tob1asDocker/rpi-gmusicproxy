@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
 	rm -rf /var/lib/apt/lists/* && \
 	pip --version && \
 	python --version && \
+	pip install --upgrade pip && \
 	git clone https://github.com/diraimondo/gmusicproxy.git app/ && \
 	apt-get remove --purge git git-man libcurl3-gnutls liberror-perl && apt-get clean && \
 	cd /app && pip install --no-cache-dir -r requirements.txt
