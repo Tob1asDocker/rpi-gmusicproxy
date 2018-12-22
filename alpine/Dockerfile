@@ -16,7 +16,7 @@ RUN set -x && apk --no-cache add \
 	&& pip --version \
 	&& python --version \
 	&& pip install --upgrade pip \
-	&& git clone https://github.com/diraimondo/gmusicproxy.git app/ \
+	&& git clone https://github.com/gmusicproxy/gmusicproxy.git app/ \
 	&& cd /app && pip install --no-cache-dir -r requirements.txt
 	
 #COPY gmusicproxy.cfg /root/.config/gmusicproxy.cfg
