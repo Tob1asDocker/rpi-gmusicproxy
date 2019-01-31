@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:stretch
+FROM balenalib/rpi-raspbian:stretch
 
 ENV GMUSICPROXY_VERSION 1.0.8
 
