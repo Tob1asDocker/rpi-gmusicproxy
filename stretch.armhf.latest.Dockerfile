@@ -1,6 +1,16 @@
 FROM balenalib/rpi-raspbian:stretch
 
-RUN [ "cross-build-start" ]
+LABEL org.opencontainers.image.authors="Tobias Hargesheimer <docker@ison.ws>" \
+	org.opencontainers.image.title="GMusicProxy" \
+	org.opencontainers.image.description="Debian 9 Stretch with GMusicProxy (latest) on arm arch" \
+	org.opencontainers.image.licenses="Apache-2.0" \
+	org.opencontainers.image.url="https://hub.docker.com/r/tobi312/rpi-gmusicproxy" \
+	org.opencontainers.image.source="https://github.com/Tob1asDocker/rpi-gmusicproxy"
+
+ARG CROSS_BUILD_START=":"
+ARG CROSS_BUILD_END=":"
+
+RUN [ ${CROSS_BUILD_START} ]
 
 RUN apt-get update && apt-get install -y \
 	git \
@@ -25,8 +35,8 @@ RUN apt-get update && apt-get install -y \
 #COPY gmusicproxy.cfg /root/.config/gmusicproxy.cfg
 #WORKDIR /app
 
-RUN [ "cross-build-end" ]
-
 VOLUME ["/root/.config"]
 EXPOSE 9999/tcp
 ENTRYPOINT ["GMusicProxy"]
+
+RUN [ ${CROSS_BUILD_END} ]
