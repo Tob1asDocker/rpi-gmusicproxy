@@ -18,7 +18,7 @@ Example:
 ```sh
 # Only at initial startup for OAuth credentials (follow the instructions):
 docker run --rm --name gmusicproxy -v ${PWD}/gmusicproxy:/root/.local/share/gmusicapi -p 9999:9999 -it tobi312/rpi-gmusicproxy:latest
-# Once OAuth is established, run normally (recommended: add flag "-H your-hostname" to the end):
+# Once OAuth is established, run normally (recommended: add argument "--host your-hostname" to the end):
 docker run --name gmusicproxy -v ${PWD}/gmusicproxy:/root/.local/share/gmusicapi -p 9999:9999 -d tobi312/rpi-gmusicproxy:latest
 ```
 
