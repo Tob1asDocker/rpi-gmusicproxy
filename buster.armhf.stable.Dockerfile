@@ -17,8 +17,8 @@ RUN set -ex \
     && python --version \
     && pip --version \
     && GMUSICPROXY_VERSION=$(wget -qO- https://api.github.com/repos/gmusicproxy/gmusicproxy/releases/latest | grep 'tag_name' | cut -d\" -f4 | tr -d v) && echo "GMUSICPROXY_VERSION=${GMUSICPROXY_VERSION}" \
-	&& wget -qO- https://github.com/gmusicproxy/gmusicproxy/archive/v${GMUSICPROXY_VERSION}.tar.gz | tar -xzf - -C /usr/src/ \
-	&& mv /usr/src/gmusicproxy-${GMUSICPROXY_VERSION} /usr/src/app \
+    && wget -qO- https://github.com/gmusicproxy/gmusicproxy/archive/v${GMUSICPROXY_VERSION}.tar.gz | tar -xzf - -C /usr/src/ \
+    && mv /usr/src/gmusicproxy-${GMUSICPROXY_VERSION} /usr/src/app \
     && cd /usr/src/app \
     && pip install --no-cache-dir -r requirements.txt \
     && apt-get purge --auto-remove -y libxml2-dev libxslt1-dev zlib1g-dev gcc wget

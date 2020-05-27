@@ -18,7 +18,7 @@ RUN set -ex \
     && cd /usr/src/app \
     && rm -r .git \
     && pip install --no-cache-dir -r requirements.txt \
-	&& apk del --no-network --purge .build-deps
+    && apk del --no-network --purge .build-deps
 	
 WORKDIR /usr/src/app
 
