@@ -12,6 +12,7 @@ RUN set -ex \
        git \
 	   libxml2-dev libxslt-dev zlib-dev gcc \
 	   build-base libffi-dev openssl-dev libc-dev libmagic linux-headers \
+    && apk add --no-cache libxslt py3-lxml \
     && python --version \
     && pip --version \
     && git clone https://github.com/gmusicproxy/gmusicproxy.git /usr/src/app \
