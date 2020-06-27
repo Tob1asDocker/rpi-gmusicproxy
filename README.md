@@ -2,7 +2,7 @@
 
 ### Supported tags
 -	[`latest` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-gmusicproxy/blob/master/buster.armhf.latest.Dockerfile) (Debian 10 Buster (Slim))
--	[`alpine` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-gmusicproxy/blob/master/alpine.armhf.Dockerfile) (AlpineLinux 3.11)
+-	[`alpine` (*Dockerfile*)](https://github.com/Tob1asDocker/rpi-gmusicproxy/blob/master/alpine.armhf.Dockerfile) (AlpineLinux 3.12)
 
 ### About these images:
 * it always uses the latest GMusicProxy version from *[github.com/gmusicproxy/gmusicproxy](https://github.com/gmusicproxy/gmusicproxy)*.
